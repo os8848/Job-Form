@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containter">
+
+        <h2>Applicant's Profile Form</h2>
+        <form action="/submit_form" method="POST">
+            <!-- Full Name -->
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+            
+            <!-- Mobile Number -->
+            <label for="mobile_number">Mobile Number:</label>
+            <input type="text" id="mobile_number" name="mobile_number" required><br><br>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <!-- Father's Name -->
+        <label for="father_name">Father's Name:</label>
+        <input type="text" id="father_name" name="father_name" required><br><br>
+        
+        <!-- Nationality -->
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality"><br><br>
+        
+        <!-- Languages -->
+        <label for="language">Languages:</label>
+        <input type="text" id="language" name="language"><br><br>
+        
+        <!-- Temporary Address -->
+        <label for="address">Temporary Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+        
+        <!-- Driving License -->
+        <label for="driving_license">Do you have a driving license?</label>
+        <input type="checkbox" id="driving_license" name="driving_license" value="yes"><br><br>
+        
+        <!-- Type of Vehicle -->
+        <label for="vehicle_type">Type of vehicle:</label>
+        <input type="checkbox" id="two_wheeler" name="vehicle_type" value="two_wheeler">
+        <label for="two_wheeler">Two-wheeler</label>
+        <input type="checkbox" id="four_wheeler" name="vehicle_type" value="four_wheeler">
+        <label for="four_wheeler">Four-wheeler</label><br><br>
+        
+        <!-- Employment Type -->
+        <label for="employment_type">Employment Type:</label>
+        <input type="radio" id="full_time" name="employment_type" value="full_time">
+        <label for="full_time">Full-time</label>
+        <input type="radio" id="part_time" name="employment_type" value="part_time">
+        <label for="part_time">Part-time</label><br><br>
+        
+        <!-- Minimum Salary -->
+        <label for="minimum_salary">Minimum Salary Desired (NRS):</label>
+        <input type="text" id="minimum_salary" name="minimum_salary"><br><br>
+        
+        <!-- Needs (Fooding, Lodging) -->
+        <label for="needs">Do you need:</label><br>
+        <input type="checkbox" id="food" name="needs" value="food">
+        <label for="food">Fooding</label><br>
+        <input type="checkbox" id="lodging" name="needs" value="lodging">
+        <label for="lodging">Lodging</label><br><br>
+        
+        <!-- Academic Qualification -->
+        <label for="academic_qualification">Academic Qualification:</label>
+        <input type="text" id="academic_qualification" name="academic_qualification"><br><br>
+        
+        <!-- Training and Skills -->
+        <label for="training_skills">Training and Skills:</label>
+        <input type="text" id="training_skills" name="training_skills"><br><br>
+
+        <!-- QR Code for Payment -->
+        <label for="payment_qr">Scan to Pay:</label><br>
+        <img src="path_to_your_qr_code_image.png" alt="Payment QR Code" id="payment_qr" class="qr-image"><br><br>
+        
+        <!-- Payment ID -->
+        <label for="payment_id">Payment ID/Transaction ID:</label>
+        <input type="text" id="payment_id" name="payment_id" placeholder="Enter payment/transaction ID" required><br><br>
+        
+        <!-- Upload Payment Screenshot -->
+        <label for="payment_screenshot">Upload Payment Screenshot:</label>
+        <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*" required><br><br>
+        
+        <!-- Terms and Conditions -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I have read and agree to the terms and conditions</label><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
